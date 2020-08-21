@@ -1,0 +1,7 @@
+.logIn-img{
+    object-fit: cover;
+    @include rwd($mobile) {
+        height: 220px;
+        width: 100%;
+    };
+}
