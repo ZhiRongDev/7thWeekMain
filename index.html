@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/all.min.css">
     <title>第七周首頁</title>
 </head>
@@ -20,7 +21,7 @@
             </div>
             <div class="col-12 col-md-7 col-lg-5">
                 <ul class="list-unstyled justify-content-between mb-0 layout-Navbar">
-                    <li><a href="#">Product</a></li>
+                    <li><a href="pages/product.html">Product</a></li>
                     <li><a href="#">log in</a></li>
                     <li><a href="#">Wishlist</a></li>
                     <li><a href="#" class="pr-0">Cart(3)</a></li>
@@ -29,7 +30,7 @@
         </div>
     </header>
     <main>
-        <section class="index-banner">
+        <section class="index-banner" data-aos="fade-up">
             <div class="container h-100">
                 <div class="row no-gutters justify-content-end align-items-center h-100">
                     <div class="col-12 col-md-5 text-white">
@@ -42,7 +43,7 @@
                 </div>
             </div>
         </section>
-        <section class="container mt-5">
+        <section class="container mt-5"  data-aos="fade-up">
             <div class="row no-gutters flex-row-reverse">
                 <div class="col-12 col-md-6">
                     <img src="img/photo-1563170351-be82bc888aa4.png" alt="">
@@ -137,38 +138,44 @@
                 </div>
             </div>
         </section>
-        <section class="bg-light mb-5 index-product-pricing">
+        <section class="bg-light mb-5 index-product-pricing" data-aos="fade-up">
             <div class="container">
                 <div class="row py-5">
                     <div class="col-12 col-sm-4">
-                        <img src="img/photo-1530630458144-014709e10016.png" alt="">
-                        <h4 class="mt-2">Poppy & Barley</h4>
-                        <p>Jo Malone</p>
-                        <p class="mr-3">NT$1,380 <span><del class="text-dark">NT$1,580</del></span></p>
+                        <a href="#" class="d-block text-decoration-none text-black">
+                            <img src="img/photo-1530630458144-014709e10016.png" alt="">
+                            <h4 class="mt-2">Poppy & Barley</h4>
+                            <p>Jo Malone</p>
+                            <p class="mr-3">NT$1,380 <span><del class="text-dark">NT$1,580</del></span></p>
+                        </a>
                     </div>
                     <div class="col-12 col-sm-4">
-                        <img src="img/photo-1556228720-da4e85f25e15.png" alt="">
-                        <h4 class="mt-2">Body Wash</h4>
-                        <p>Curology</p>
-                        <p class="mr-3">NT$1,580</p>
+                        <a href="#" class="d-block text-decoration-none text-black">
+                            <img src="img/photo-1556228720-da4e85f25e15.png" alt="">
+                            <h4 class="mt-2">Body Wash</h4>
+                            <p>Curology</p>
+                            <p class="mr-3">NT$1,580</p>
+                        </a>
                     </div>
                     <div class="col-12 col-sm-4">
-                        <div class="position-relative">
-                            <img src="img/photo-1559264730-1533a6ec0433.png" alt="">
-                            <div class="index-product-cover d-flex justify-content-center align-items-center">
-                                <p>Sold out</p>
+                        <a href="#" class="d-block text-decoration-none text-black">
+                            <div class="position-relative">
+                                <img src="img/photo-1559264730-1533a6ec0433.png" alt="">
+                                <div class="index-product-cover d-flex justify-content-center align-items-center">
+                                    <p>Sold out</p>
+                                </div>
                             </div>
-                        </div>
-                        <h4 class="mt-2">Apple Cider Vinegar Capsule</h4>
-                        <p>Tonik</p>
-                        <p class="mr-3">NT$1,580</p>
+                            <h4 class="mt-2">Apple Cider Vinegar Capsule</h4>
+                            <p>Tonik</p>
+                            <p class="mr-3">NT$1,580</p>
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
         <section class="my-5">
             <div class="container">
-                <div class="row">
+                <div class="row" data-aos="fade-up">
                     <div class="col-12 col-md-8">
                         <img src="img/photo-1594913615593-e4b8c44625be.png" alt="">
                     </div>
@@ -187,18 +194,20 @@
                 </div>
             </div>
         </section>
-        <section class="index-more-info">
+        <section class="index-more-info" data-aos="fade-up">
             <div class="container h-100">
-                <div class="row align-items-end h-100">
-                    <div class="col-12 col-md-4">
-                        <h3 class="text-dark font-weight-bold mb-4">記得<br>訂閱以獲取更多資訊！</h3>
-                        <div class="input-group">
-                            <input type="text" class="form-control border border-primary py-4" placeholder="Your email address" aria-label="Your email address" aria-describedby="button-addon2">
-                            <div class="input-group-append">
-                              <button class="btn btn-primary" type="button" id="button-addon2">Subscribe</button>
+                <div class="row align-items-end h-100 position-relative">
+                    <form class="col-12 col-md-4 subscribe-input">
+                        <div class="form-group">
+                            <label class="text-dark font-weight-bold mb-4 h3" for="email">記得<br>訂閱以獲取更多資訊！</label>
+                            <div class="input-group">
+                                <input type="email" class="form-control border border-primary py-4" placeholder="Your email address" aria-label="Your email address" name="email">
+                                <div class="input-group-append">
+                                    <button class="btn btn-primary" type="button" id="button-addon2">Subscribe</button>
+                                </div>
                             </div>
-                          </div>
-                    </div>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>
@@ -218,12 +227,20 @@
             </div>
         </div>
     </footer>
-
     
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+        AOS.init({
+            once: true, // whether animation should happen only once - while scrolling down
+        });
+    </script>
     <script src="js/all.js"></script>
 </body>
 </html>
