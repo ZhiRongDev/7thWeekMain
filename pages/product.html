@@ -5,32 +5,205 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/all.min.css">
-    <title>第七周首頁</title>
+    <title>第七周-產品列表頁</title>
 </head>
 <body>
-    <header class="container px-0">
-        <div class="row no-gutters align-items-center justify-content-between layout-Header">
-            <div class="col-12 col-md-3">
-                <div class="d-flex justify-content-between align-items-center">
-                    <a href="../index.html" class="logo logo-Header ml-3"><h1>d’Perfume</h1></a>
-                    <ul class="d-flex d-md-none list-unstyled mb-0 layout-MenuToggle"> 
-                        <li><a href="#" class="p-3"><img src="../img/shopping-cart.svg" alt="" width="20px" height="20px"></a></li>
-                        <li><a href="#" class="p-3"><img src="../img/menu-toggle.png" alt=""></a></li>
-                    </ul>
+    <header>
+        <div class="container px-0">
+            <div class="row no-gutters align-items-center justify-content-between layout-Header">
+                <div class="col-12 col-md-3">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <a href="../index.html" class="logo logo-Header ml-3"><h1>d’Perfume</h1></a>
+                        <ul class="d-flex d-md-none list-unstyled mb-0"> 
+                            <li><a href="#" class="p-3"><img src="../img/shopping-cart.svg" alt="" width="20px" height="20px"></a></li>
+                            <li><a href="#" class="p-3 layout-MenuToggle"><img src="../img/menu-toggle.png" alt=""></a></li>
+                        </ul>
+                    </div>
                 </div>
+                <div class="col-12 col-md-7 col-lg-5">
+                    <ul class="list-unstyled justify-content-between mb-0 layout-Navbar">
+                        <li><a href="product.html">Product</a></li>
+                        <li><a href="#">log in</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#" class="pr-0">Cart(3)</a></li>
+                    </ul>  
+                </div>     
             </div>
-            <div class="col-12 col-md-7 col-lg-5">
-                <ul class="list-unstyled justify-content-between mb-0 layout-Navbar">
-                    <li><a href="product.html">Product</a></li>
-                    <li><a href="#">log in</a></li>
-                    <li><a href="#">Wishlist</a></li>
-                    <li><a href="#" class="pr-0">Cart(3)</a></li>
-                </ul>  
-            </div>     
+        </div>
+        <div class="product-menu bg-primary d-none d-md-block">
+            <div class="container">
+                <ul class="row mb-0 list-unstyled no-gutters">
+                    <li><a href="#" class="text-white">CHANEL</a></li>
+                    <li><a href="#" class="text-white">Jo Malone</a></li>
+                    <li><a href="#" class="text-white">Curology</a></li>
+                    <li><a href="#" class="text-white">Dior</a></li>
+                    <li><a href="#" class="text-white">Chloe</a></li>
+                    <li><a href="#" class="text-white">ZARA</a></li>
+                </ul>
+            </div>
         </div>
     </header>
     <main>
-        
+        <section class="mt-5" data-aos="fade-up">
+            <div class="container">
+                <div class="row">
+                    <div class="col-6 col-md-4 col-lg-3 mb-5">
+                        <a href="#" class="d-block text-decoration-none text-black">
+                            <img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72.png" alt="">
+                            <h4>Poppy & Barley</h4>
+                            <p class="mb-0">Jo Malone</p>
+                            <p class="mb-0">NT$1,380 <del class="text-dark">NT$1,580</del></p>
+                        </a>
+                        <div class="d-flex">
+                            <a href="#" class="mr-3"><img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (3).png" alt=""></a>
+                            <a href="#"><img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (2).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 mb-5">
+                        <a href="#" class="d-block text-decoration-none text-black">
+                            <img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (1).png" alt="">
+                            <h4>Poppy & Barley</h4>
+                            <p class="mb-0">Jo Malone</p>
+                            <p class="mb-0">NT$1,380 <del class="text-dark">NT$1,580</del></p>
+                        </a>
+                        <div class="d-flex">
+                            <a href="#" class="mr-3"><img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (3).png" alt=""></a>
+                            <a href="#"><img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (2).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 mb-5">
+                        <a href="#" class="d-block text-decoration-none text-black">
+                            <img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (4).png" alt="">
+                            <h4>Poppy & Barley</h4>
+                            <p class="mb-0">Jo Malone</p>
+                            <p class="mb-0">NT$1,380</p>
+                        </a>
+                        <div class="d-flex">
+                            <a href="#" class="mr-3"><img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (3).png" alt=""></a>
+                            <a href="#"><img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (2).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 mb-5">
+                        <a href="#" class="d-block text-decoration-none text-black">
+                            <img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (5).png" alt="">
+                            <h4>Poppy & Barley</h4>
+                            <p class="mb-0">Jo Malone</p>
+                            <p class="mb-0">NT$1,380</p>
+                        </a>
+                        <div class="d-flex">
+                            <a href="#" class="mr-3"><img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (3).png" alt=""></a>
+                            <a href="#"><img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (2).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 mb-5">
+                        <a href="#" class="d-block text-decoration-none text-black">
+                            <img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (6).png" alt="">
+                            <h4>Poppy & Barley</h4>
+                            <p class="mb-0">Jo Malone</p>
+                            <p class="mb-0">NT$1,380 <del class="text-dark">NT$1,580</del></p>
+                        </a>
+                        <div class="d-flex">
+                            <a href="#" class="mr-3"><img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (3).png" alt=""></a>
+                            <a href="#"><img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (2).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 mb-5">
+                        <a href="#" class="d-block text-decoration-none text-black">
+                            <img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (7).png" alt="">
+                            <h4>Poppy & Barley</h4>
+                            <p class="mb-0">Jo Malone</p>
+                            <p class="mb-0">NT$1,380 <del class="text-dark">NT$1,580</del></p>
+                        </a>
+                        <div class="d-flex">
+                            <a href="#" class="mr-3"><img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (3).png" alt=""></a>
+                            <a href="#"><img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (2).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 mb-5">
+                        <a href="#" class="d-block text-decoration-none text-black">
+                            <img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (8).png" alt="">
+                            <h4>Poppy & Barley</h4>
+                            <p class="mb-0">Jo Malone</p>
+                            <p class="mb-0">NT$1,380</p>
+                        </a>
+                        <div class="d-flex">
+                            <a href="#" class="mr-3"><img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (3).png" alt=""></a>
+                            <a href="#"><img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (2).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 mb-5">
+                        <a href="#" class="d-block text-decoration-none text-black">
+                            <img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (9).png" alt="">
+                            <h4>Poppy & Barley</h4>
+                            <p class="mb-0">Jo Malone</p>
+                            <p class="mb-0">NT$1,380 </p>
+                        </a>
+                        <div class="d-flex">
+                            <a href="#" class="mr-3"><img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (3).png" alt=""></a>
+                            <a href="#"><img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (2).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 mb-5">
+                        <a href="#" class="d-block text-decoration-none text-black">
+                            <img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (10).png" alt="">
+                            <h4>Poppy & Barley</h4>
+                            <p class="mb-0">Jo Malone</p>
+                            <p class="mb-0">NT$1,380 <del class="text-dark">NT$1,580</del></p>
+                        </a>
+                        <div class="d-flex">
+                            <a href="#" class="mr-3"><img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (3).png" alt=""></a>
+                            <a href="#"><img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (2).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 mb-5">
+                        <a href="#" class="d-block text-decoration-none text-black">
+                            <img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (11).png" alt="">
+                            <h4>Poppy & Barley</h4>
+                            <p class="mb-0">Jo Malone</p>
+                            <p class="mb-0">NT$1,380 <del class="text-dark">NT$1,580</del></p>
+                        </a>
+                        <div class="d-flex">
+                            <a href="#" class="mr-3"><img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (3).png" alt=""></a>
+                            <a href="#"><img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (2).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 mb-5">
+                        <a href="#" class="d-block text-decoration-none text-black">
+                            <img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (12).png" alt="">
+                            <h4>Poppy & Barley</h4>
+                            <p class="mb-0">Jo Malone</p>
+                            <p class="mb-0">NT$1,380</p>
+                        </a>
+                        <div class="d-flex">
+                            <a href="#" class="mr-3"><img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (3).png" alt=""></a>
+                            <a href="#"><img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (2).png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4 col-lg-3 mb-5">
+                        <a href="#" class="d-block text-decoration-none text-black">
+                            <img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (13).png" alt="">
+                            <h4>Poppy & Barley</h4>
+                            <p class="mb-0">Jo Malone</p>
+                            <p class="mb-0">NT$1,380 </p>
+                        </a>
+                        <div class="d-flex">
+                            <a href="#" class="mr-3"><img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (3).png" alt=""></a>
+                            <a href="#"><img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (2).png" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row justify-content-center mb-5">
+                    <div>
+                        <ul class="pagination pagination-lg mb-0">
+                            <li class="page-item"><a class="page-link text-black font-weight-bold" href="#">1</a></li>
+                            <li class="page-item"><a class="page-link text-black font-weight-bold" href="#">2</a></li>
+                            <li class="page-item"><a class="page-link text-black font-weight-bold" href="#">3</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
         <section class="index-more-info" data-aos="fade-up">
             <div class="container h-100">
                 <div class="row align-items-end h-100 position-relative">
