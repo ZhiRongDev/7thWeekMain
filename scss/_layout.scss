@@ -22,6 +22,24 @@ a{
     width: 128px;
     height: 38px;
 }
+.menu-cart{
+    @include rwd($mobile) {
+        &::after{
+            content: "3";
+            display: block;
+            font-size: 12px;
+            color: #ffffff;
+            width: 16px;
+            height: 16px;
+            position: absolute;
+            left: 60%;
+            top: 20%;
+            text-align: center;
+            border-radius: 50%;
+            background-color: #916000;
+        }
+    }
+}
 .layout-Header{
     position: relative;
 }
@@ -38,7 +56,7 @@ a{
         height: 0;
         overflow: hidden;
         &.active{
-            height: 195px;  // 為何不可以寫成 height: 100% ????
+            height: 245px;  // 為何不可以寫成 height: 100% ????
         }
      }
     li{

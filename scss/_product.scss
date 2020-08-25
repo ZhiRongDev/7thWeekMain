@@ -6,3 +6,8 @@
         padding-right: 28px; 
     }
 }
+.product-name{
+    @include rwd($mobile) {
+        font-size: 1.25rem;
+    }
+}

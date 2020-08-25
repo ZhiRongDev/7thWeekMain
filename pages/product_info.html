@@ -15,7 +15,7 @@
                     <div class="d-flex justify-content-between align-items-center">
                         <a href="../index.html" class="logo logo-Header ml-3">d’Perfume</a>
                         <ul class="d-flex d-md-none list-unstyled mb-0"> 
-                            <li><a href="#" class="p-3"><img src="../img/shopping-cart.svg" alt="" width="20px" height="20px"></a></li>
+                            <li class="position-relative"><a href="#" class="p-3 menu-cart"><img src="../img/shopping-cart.svg" alt="" width="20px" height="20px"></a></li>
                             <li><a href="#" class="p-3 layout-MenuToggle"><img src="../img/menu-toggle.png" alt=""></a></li>
                         </ul>
                     </div>
@@ -23,9 +23,10 @@
                 <div class="col-12 col-md-7 col-lg-5">
                     <ul class="list-unstyled justify-content-between mb-0 layout-Navbar">
                         <li><a href="product.html">Product</a></li>
-                        <li><a href="logIn.html">log in</a></li>
                         <li><a href="#">Wishlist</a></li>
-                        <li><a href="#" class="pr-0">Cart(3)</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="logIn.html">log in</a></li>
                     </ul>  
                 </div>     
             </div>
@@ -62,14 +63,38 @@
                                 <option value="3">4</option>
                             </select>
                             <div class="input-group-append w-50">
-                              <button class="btn btn-primary w-100" type="submit">加入購物車</button>
+                              <button class="btn btn-primary w-100" type="button" data-toggle="modal" data-target="#addCart">加入購物車</button>
                             </div>
                         </div>
                     </form>
-                    <div class="d-flex mt-3 mb-5">
-                        <a href="#" class="mr-2"><img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (3).png" alt=""></a>
-                        <strong>加入我的收藏</strong>
+                     <!-- Modal -->
+                     <div class="modal fade" id="addCart" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <P class="text-primary text-center m-0 font-weight-bold">已加入購物車</P>
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                    <!--  -->
+                    <div class="d-flex mt-3 mb-5">
+                        <a href="#" class="mr-2 text-decoration-none d-flex align-items-center" data-toggle="modal" data-target="#addFavorites">
+                            <img src="../img/urn_aaid_sc_US_dc5ebe5c-3e56-4981-a010-158b5ded0e72 (3).png">
+                            <strong class="text-black ml-2">加入我的收藏</strong>
+                        </a>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="addFavorites" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <P class="text-primary text-center m-0 font-weight-bold">已加入我的收藏</P>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 購買須知 -->
                     <p class="mb-2"><strong>商品購買須知</strong></p>
                     <p>
                         產品因拍攝關係顏色可能略有差異，實際以廠商出貨為主<br>。 商品情境照為示意用，僅商品主體不包含其他配件，請以規格內容物為主。<br> D’Perfume 盡可能確保所列商品備貨充足，但偶爾仍會有產品售罄的情況。如您所訂購的商品庫存不足，我們將盡快以電子郵件通知您。任何訂單變動均會在訂單總額與出貨訊息內更新。
@@ -111,7 +136,7 @@
                     <small class="text-white mb-0">© 2020. All Rights Reserved.</small>
                 </div>
                 <ul class="list-unstyled d-none d-md-flex footer-Navbar mb-0">
-                    <li><a href="#" class="text-white">Product</a></li>
+                    <li><a href="product.html" class="text-white">Product</a></li>
                     <li><a href="#" class="text-white">Blog</a></li>
                     <li><a href="#" class="text-white pr-0">Contact</a></li>
                 </ul>
